@@ -1,7 +1,3 @@
-// This is a function which you can call like generateRandomNumberUpToMax()
-// And in the paranthesees enter a max number that the function should not go beyond while generating a random number
-let generateRandomNumberUpToMax = (maxNumber) => Math.floor(Math.random() * maxNumber);
-
 // An object is a set of associated Key: Value pairs
 // Here is an object that has keys with RPS choices and the values are what that RPS key beats
 let choicesObject = {
@@ -21,6 +17,10 @@ let choicesArray = Object.keys(choicesObject);
 
 // Now that it's an Array, we can use array.length to see how many items in the Array (3) and store that into a variable
 let amountOfChoices = choicesArray.length;
+
+// This is a function which you can call like generateRandomNumberUpToMax()
+// And in the paranthesees enter a max number that the function should not go beyond while generating a random number
+let generateRandomNumberUpToMax = (maxNumber) => Math.floor(Math.random() * maxNumber);
 
 // Now that we have the amount of items in the Array in `amountOfChoices`, we can pass that in as the Max for generateRandomNumberUpToMax()
 let randomNumberInRange = generateRandomNumberUpToMax(amountOfChoices);
