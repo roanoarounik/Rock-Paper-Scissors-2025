@@ -7,18 +7,8 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="./scripts/script.js" defer></script>
     <title>RPS</title>
-    <style>
-        body {
-            background: black;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
 </head>
 <body>
-    <!-- RPS
-    <button onclick="window.location.reload()">Replay</button> -->
-
     <header>Rock Paper Scissors</header>
 
     <main>
@@ -42,9 +32,11 @@
         <section class="section3">
             <div class="farDown">
 
-                    <div class="gapContainer">
+                <div class="gapContainer">
                         
-                    <div>It's a Draw!</div>
+                    <div class="gameEndStateField">
+                        It's a Draw!
+                    </div>
                     
                     <div class="flexDown">
                         <div>You chose Paper</div>
@@ -53,9 +45,17 @@
                 </div>
                     
                 <div class="flexSide">
-                    <div>Player Wins: 3</div>
+                    <div class="winsField">Player Wins: 
+                        <span class="playerWins">
+                            3
+                        </span> 
+                    </div>
                     <div class="theWall"></div>
-                    <div>Computer Wins: 7</div>
+                    <div class="winsField">Computer Wins: 
+                        <span class="cpuWins">
+                            7
+                        </span> 
+                    </div>
                 </div>
             </div>
         </section>

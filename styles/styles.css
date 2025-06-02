@@ -3,14 +3,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-/* .choiceContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 25px;
-} */
 
 .box {
     background: white;
@@ -22,6 +18,10 @@ body {
     border-radius: 12px;
     display: flex;
     justify-content: center;
+}
+
+.box.hover {
+    cursor: pointer;
 }
 
 header {
@@ -104,4 +104,10 @@ div {
     .choiceContainer {
         flex-direction: column;
     }
+}
+
+.winsField {
+    display: flex;
+    grid-gap: 15px;
+    align-items: center;
 }

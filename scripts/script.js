@@ -8,7 +8,7 @@ let choicesObject = {
 
 // This will spawn a prompt on the users browswer with the text `Please Enter Rock, Paper, or Scissors` 
 // Then the user can type into the field and whatever the user types will be stored in variable `usersChoice`
-let usersChoice = prompt(`Please Enter Rock, Paper, or Scissors`);
+// let usersChoice = prompt(`Please Enter Rock, Paper, or Scissors`);
 
 // Now that we have the users choice of Rock, Paper, or Scissors, lets generate a random cpu choice of Rock, Paper, or Scissors
 
