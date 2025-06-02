@@ -13,19 +13,19 @@
 
     <main>
 
-        <section class="section1"> <span>User</span> 
+        <section class="section1 choicesSection"> <span>User</span> 
             <div class="choiceContainer set1">
-                <div class="box hover">Rock</div>
-                <div class="box hover">Paper</div>
-                <div class="box hover">Scissors</div>
+                <div class="userChoiceButton box hover" onclick="userSelectChoice(event, 'rock')">Rock</div>
+                <div class="userChoiceButton box hover" onclick="userSelectChoice(event, 'paper')">Paper</div>
+                <div class="userChoiceButton box hover" onclick="userSelectChoice(event, 'scissors')">Scissors</div>
             </div>
         </section>
         
-        <section class="section2"> <span>Computer</span> 
+        <section class="section2 choicesSection"> <span>Computer</span> 
             <div class="choiceContainer set2">
-                <div class="box">Rock</div>
-                <div class="box">Paper</div>
-                <div class="box">Scissors</div>
+                <div class="box cpuChoiceButton rock">Rock</div>
+                <div class="box cpuChoiceButton paper">Paper</div>
+                <div class="box cpuChoiceButton scissors">Scissors</div>
             </div>
         </section>
 
@@ -35,25 +35,30 @@
                 <div class="gapContainer">
                         
                     <div class="gameEndStateField">
-                        It's a Draw!
+                        -----
                     </div>
                     
                     <div class="flexDown">
-                        <div>You chose Paper</div>
-                        <div>Computer chose Paper</div>
+                        <div class="choiceField">
+                            You chose
+                            <span class="chce usrChce">---</span>
+                        </div>
+                        <div class="choiceField">Computer chose 
+                            <span class="chce cpuChce">---</span>
+                        </div>
                     </div>
                 </div>
                     
                 <div class="flexSide">
                     <div class="winsField">Player Wins: 
                         <span class="playerWins">
-                            3
+                            0
                         </span> 
                     </div>
                     <div class="theWall"></div>
                     <div class="winsField">Computer Wins: 
                         <span class="cpuWins">
-                            7
+                            0
                         </span> 
                     </div>
                 </div>

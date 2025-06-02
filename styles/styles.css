@@ -8,6 +8,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.chce {
+    text-transform: capitalize;
+}
+
 .box {
     background: white;
     color: black;
@@ -20,8 +24,16 @@ body {
     justify-content: center;
 }
 
+.cpu_selected {
+    background: rgb(0, 145, 255);
+}
+
 .box.hover {
     cursor: pointer;
+}
+
+.box.hover.selected {
+    background: rgb(0, 255, 0);
 }
 
 header {
@@ -32,7 +44,7 @@ header {
     align-items: center;
 }
 
-span {
+.choicesSection span {
     font-size: 30px;
     display: flex;
     justify-content: center;
