@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            grid-gap: 15px;
+            justify-content: center;
+            align-items: center;
+            min-height: 95dvh;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        button {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            background: lime;
+            padding: 35px;
+            font-size: 45px;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 150ms ease-in-out;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        button:active {
+            background: skyblue;
+        }
+        .insert {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="style" onclick="onButtonClick()">
+        Hello World
+    </button>
+       
+    <div class="insert"></div>
+
+    <script>
+        function log() {
+            console.log(`hello world`);
+            console.log(`hello world 1`);
+            console.log(`hello world 2`);
+            console.log(`hello world 3`);
+            console.log(`hello world 4`);
+            console.log(`hello world 5`);
+            console.log(`hello world 6`);
+        }
+        function onButtonClick() {
+            log();
+            let insertElement = document.querySelector(`.insert`);
+            if (insertElement) {
+                insertElement.innerHTML = `choclate pudding 2`;
+            }
+        }
+    </script>
+
+</body>
+</html>
